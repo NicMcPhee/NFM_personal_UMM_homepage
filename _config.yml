@@ -50,7 +50,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, custom/asides/twitter.html, asides/github.html, asides/flickr.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [asides/recent_posts.html, custom/asides/twitter.html, asides/github.html, custom/asides/flickr.html, asides/delicious.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -98,3 +98,11 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# Flickr
+flickr_user: 26406919@N00           # user id (not username)
+flickr_count: 5          # number of photos to show (example: 3)
+flickr_display: random        # random or latest
+flickr_size: t           # t (thumbnail), s (small square), m (medium)
+flickr_source: user         # user, user_tag, all, all_tag
+flickr_tag:             # tagname - set if flickr_source is set to user_tag or all_tag

@@ -4,3 +4,21 @@
 #avatar {
 	float: right;
 }
+
+.flickr {
+  text-align: center;
+}
+aside.sidebar .flickr img {
+  border: none;
+}
+aside.sidebar section .flickr img {
+  // margin-top: 20px;
+  margin: 5px;
+}
+
+#disclaimer blockquote {
+	margin-top: -15px;
+	margin-left: 50px;
+	line-height: 1.2em;
+	font-style: italic;
+}
