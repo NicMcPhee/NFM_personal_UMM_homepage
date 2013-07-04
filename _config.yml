@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://www.morris.umn.edu/~mcphee
-title: Nic McPhee @ University of Minnesota, Morris
-subtitle: 
+title: Nic McPhee
+subtitle: University of Minnesota, Morris
 author: Nic McPhee
 simple_search: http://google.com/search
 description: My homepage as a faculty at the University of Minnesota, Morris, primarily to provide links to my course materials.
@@ -26,7 +26,7 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /~mcphee
+root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public
