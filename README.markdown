@@ -1,30 +1,17 @@
-## What is Octopress?
+## Nic McPhee's personal "home page" at UMM
 
-Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
+The contents and build process for [my personal homepage](http://www.morris.umn.edu/~mcphee) at the [University of Minnesota, Morris](http://www.morris.umn.edu/).
+I've been just hacking raw HTML since creating the page in the mid-90's, and the time has long since come for me
+to move to a more modern setup.
 
-1. **Octopress sports a clean responsive theme** written in semantic HTML5, focused on readability and friendliness toward mobile devices.
-2. **Code blogging is easy and beautiful.** Embed code (with [Solarized](http://ethanschoonover.com/solarized) styling) in your posts from gists, jsFiddle or from your filesystem.
-3. **Third party integration is simple** with built-in support for Pinboard, Delicious, GitHub Repositories, Disqus Comments and Google Analytics.
-4. **It's easy to use.** A collection of rake tasks simplifies development and makes deploying a cinch.
-5. **Ships with great plug-ins** some original and others from the Jekyll community &mdash; tested and improved.
-
-
-## Documentation
-
-Check out [Octopress.org](http://octopress.org/docs) for guides and documentation.
-
-
-## Contributing
-
-[![Build Status](https://travis-ci.org/imathis/octopress.png?branch=master)](https://travis-ci.org/imathis/octopress)
-
-We love to see people contributing to Octopress, whether it's a bug report, feature suggestion or a pull request. At the moment, we try to keep the core slick and lean, focusing on basic blogging needs, so some of your suggestions might not find their way into Octopress. For those ideas, we started a [list of 3rd party plug-ins](https://github.com/imathis/octopress/wiki/3rd-party-plugins), where you can link your own Octopress plug-in repositories. For the future, we're thinking about ways to easier add them them into our main releases.
-
+The current plan is to use [Octopress](http://octopress.org) (based on [Jekyll](https://github.com/mojombo/jekyll))
+to manage the content.
 
 ## License
-(The MIT License)
+(The MIT License – borrowed from Octopress)
 
 Copyright © 2009-2013 Brandon Mathis
+Copyright © 2013 Nic McPhee
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‘Software’), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -32,6 +19,12 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+## Disclaimer
+
+If you were for some odd reason _deeply_ confused and thought I somehow spoke for the entirity of the University
+of Minnesota system, I don't. Or, more formally:
+
+> The views and opinions expressed in this page are strictly those of the page author. The contents of this page have not been reviewed or approved by the University of Minnesota.
 
 #### If you want to be awesome.
 - Proudly display the 'Powered by Octopress' credit in the footer.
