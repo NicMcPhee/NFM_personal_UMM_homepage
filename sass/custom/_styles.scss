@@ -5,6 +5,11 @@
 	float: right;
 }
 
+header a {
+	@include link-colors($subtitle-color, $hover: lighten($subtitle-color, 25), $visited: $subtitle-color, $focus: $subtitle-color, $active: $subtitle-color);
+	text-decoration: none;
+}
+
 .flickr {
   text-align: center;
 }
