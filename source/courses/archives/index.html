@@ -1,0 +1,18 @@
+---
+layout: page
+title: Course Archive
+footer: false
+---
+
+<div id="course-archives">
+{% for course in site.courses reverse %}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% unless year == this_year %}
+  {% assign year = this_year %}
+  <h2>{{ year }}</h2>
+{% endunless %}
+<article>
+  {% include archive_course.html %}
+</article>
+{% endfor %}
+</div>

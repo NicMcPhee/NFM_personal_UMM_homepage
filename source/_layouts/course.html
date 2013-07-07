@@ -1,0 +1,51 @@
+---
+layout: page
+---
+
+<div>
+<article role="article">
+	
+	<!-- This picks up a *lot* of default behavior from layout:page at the top, some of which (the date display, e.g.) I may want to override. I think that will require that I use layout: default and then include the bits that I care about. I think the the titling for courses just isn't good at the moment and needs to be made better. -->
+		
+	<div id="course">
+		<h1>{{ page.course_title }}</h1>
+		
+		<p class="course_description">
+			<div id="description_label">Catalog description</div>
+			{{ page.description }}
+		</p>
+		{% if page.notes %}
+		<p class="course_notes">
+			<div id="notes_label">Notes</div>
+			{{ page.notes }}
+		</p>
+		{% endif %}
+
+		<!-- Not sure if I want to actually display the URLs, or just provide links. The URLs are long and not necessarily super exciting to read. -->
+		<!-- I should get this to generate off of a list of URLs rather than having them each handled seperately here. -->
+		<dl class="course_links">
+			{% if page.syllabus %}
+			<dt>Syllabus URL</dt>
+			<dd><a href="{{ page.syllabus }}">{{ page.syllabus }}</a></dd>
+			{% endif %}
+			{% if page.wiki %}
+			<dt>Course wiki URL</dt>
+			<dd><a href="{{ page.wiki }}">{{ page.wiki }}</a></dd>
+			{% endif %}
+			{% if page.moodle %}
+			<dt>Course Moodle URL</dt>
+			<dd><a href="{{ page.moodle }}">{{ page.moodle }}</a></dd>
+			{% endif %}
+		</dl>
+	</div>
+	
+</article>
+{% if site.disqus_short_name and page.comments == true %}
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include course/disqus_thread.html %}</div>
+  </section>
+{% endif %}
+</div>
+
+
