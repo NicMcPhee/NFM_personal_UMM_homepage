@@ -10,6 +10,37 @@ header a {
 	text-decoration: none;
 }
 
+#notes_label {
+	font-weight: bold;
+}
+
+#description_label {
+	font-weight: bold;
+}
+
+// Definition list formatting for course links
+.course_links dl {
+    border: 3px double #ccc;
+    padding: 0.5em;
+}
+
+.course_links dt {
+    float: left;
+    clear: left;
+    width: 200px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.course_links dt:after {
+    content: ":";
+}
+
+.course_links dd {
+    margin: 0 0 0 210px;
+    padding: 0 0 0.5em 0;
+}
+
 .flickr {
   text-align: center;
 }
