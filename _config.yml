@@ -15,11 +15,25 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://facultypages.morris.umn.edu/~mcphee/" # the base hostname & protocol for your site
 twitter_username: NicMcPhee
 github_username:  NicMcPhee
+gchat: mcphee@morris.umn.edu
+office: Sci 1315 (downstairs at the east end of the Science office wing)
+office_phone: 320-589-6320
+science_division_phone: 320-589-6300
+mailing_address: |
+  Nic McPhee
+  Division of Science and Mathematics
+  University of Minnesota, Morris
+  600 E. 4th Street
+  Morris, MN 56267-2132
+calendar_url: http://www.google.com/calendar/hosted/morris.umn.edu/embed?src=mcphee%40morris.umn.edu&ctz=America/Chicago&mode=WEEK
 
 collections:
   courses:
     output: true
     permalink: /courses/:path/
+    defaults:
+      - values:
+          layout: syllabus
 
 # Build settings
 markdown: kramdown
