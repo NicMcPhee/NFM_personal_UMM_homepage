@@ -13,5 +13,5 @@ faculty: Nic McPhee
 
 | Week | Topic | Readings | Assignments & activities |
 | ---- | ---- | ----- | ---- |
-| 0 | duck | goose |
-| x    | y    | z     |
+| 0 (18-25 Jan) | Systems; sources of and ways to cope with complexity | Chapter 1 | Exercises 1.1-1.5 (for discussion, nothing to turn in) |
+|     |     |      |
