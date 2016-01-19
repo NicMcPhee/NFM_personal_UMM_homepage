@@ -35,9 +35,10 @@ This is the "book part" of the (now) pair of systems core courses which, along
 with Algorithms & Computability (CSci 3501) and Software Design & Development
 (CSci 3601), forms the "center" of our major between Data Structures and the
 electives. It's here that we cover the basics of computing systems, including
-operating systems and networks. What are the sources of the difficulty that make
-it so difficult to work with these important systems, and how do we deal with
-that complexity?
+operating systems and networks, with a particular emphasis on the sources of
+the complexity that can make
+it so difficult to work with these important systems, and ways to manage
+that complexity.
 
 This semester represents the second half of a major experiment, where we've split
 the CSci 3401 course into two parts: CSci 3402 (Concepts – this course) and

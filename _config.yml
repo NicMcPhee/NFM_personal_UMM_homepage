@@ -11,12 +11,13 @@ email: mcphee@morris.umn.edu
 description: > # this means to ignore newlines until "baseurl:"
   Materials for and from my courses, research, and other
   activities (Twitter, Flickr, etc.).
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/~mcphee/" # the subpath of your site, e.g. /blog
 url: "http://facultypages.morris.umn.edu/~mcphee/" # the base hostname & protocol for your site
 twitter_username: NicMcPhee
 github_username:  NicMcPhee
 gchat: mcphee@morris.umn.edu
-office: Sci 1315 (downstairs at the east end of the Science office wing)
+office: Sci 1315
+office_location: downstairs at the east end of the Science office wing
 office_phone: 320-589-6320
 science_division_phone: 320-589-6300
 mailing_address: |

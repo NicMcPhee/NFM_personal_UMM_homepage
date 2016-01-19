@@ -19,11 +19,157 @@ layout: default
 
     <hr>
 
+    <div class="office_hours">
+      <h1>Stopping by for a chat, AKA "office hours"</h1>
+      <p>
+      I am typically in my office, {{ site.office }}, or in the CSci labs (Sci 2610, 2630, and 2650)
+      during the day, and you're always more than welcome to come track me down, or e-mail
+      me ({{ site.email }}) or call me ({{ site.office_phone }}) to make an appointment.
+      </p>
+      <p>
+        Also, I use <a href="{{ site.calendar_url }}">the U's Google Calendar</a>
+        to manage my calendar and it's
+        <em>totally</em> fine to use it to see where I might be, see when I'm
+        free, or <em>just make an appointment</em>. If you add an appointment
+        to my calendar (presumably in a spot when I appear free), I'll get an
+        e-mail about it. If it looks like that time will work I'll accept the
+        appointment; otherwise I'll mail you back suggesting an alternative.
+      </p>
+      <p>
+      My "official" office hours this semester are:
+      </p>
+      <ul>
+        {% for term in site.data.office_hours %}
+          {% if term.semester == page.semester and term.year == page.year  %}
+            {% for slot in term.times %}
+              <li>{{ slot }}</li>
+            {% else %}
+              <li>To be determined</li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h1>How to best get in touch and my contact info</h1>
+      <p>
+      The best way to contact me is probably e-mail ({{ site.email }}), although
+      if you really need to get my attention and I'm looking swamped (an all too
+      common occurrence, I'm afraid) then your best bets are probably:
+      </p>
+      <ul>
+        <li>Showing up at my office ({{ site.office }}, {{ office_location }}).</li>
+        <li>Poke me via Google Hangouts ({{ site.email }}); this is particularly
+        nice if you're in the lab and want to find out if I'm around before you
+        trek down to my office.</li>
+        <li>Call my office ({{ site.office_phone }}).</li>
+      </ul>
+    </div>
+
+    <hr>
+
     <div class="policies">
       <h1>Relevant policies and support services</h1>
       {% include grading_standards.html %}
+
+      <h2>Academic dishonesty</h2>
+      <p>
+        Academic dishonesty in any portion of the academic work for a course shall be grounds for awarding a grade of F or N for the entire course.
+      </p>
+
       {% include academic_workload_policy.html %}
     </div>
+
+    <hr>
+
+    <h2>Academic Integrity</h2>
+
+<p>Academic integrity is essential to a positive teaching and learning
+environment. All students enrolled in University courses are expected to
+complete coursework responsibilities with fairness and honesty. Failure
+to do so by seeking unfair advantage over others or misrepresenting
+someone else's work as your own, can result in disciplinary action. <a href="http://regents.umn.edu/sites/regents.umn.edu/files/policies/Student_Conduct_Code.pdf">The
+University Student Conduct Code</a> defines scholastic dishonesty as
+follows:</p>
+
+<blockquote><p>Scholastic dishonesty means plagiarism; cheating on assignments or examinations; engaging in unauthorized collaboration on academic work; taking, acquiring, or using  test materials without faculty permission; submitting false or incomplete records of academic achievement; acting alone or in cooperation with another to falsify records or to obtain dishonestly grades, honors, awards, or professional endorsement; altering, forging, misrepresenting, or misusing a University academic record; or fabricating or falsifying data, research procedures, or data analysis.</p></blockquote>
+
+<p>Within this course, a student responsible for scholastic dishonesty can
+be assigned a penalty up to and including an "F" or "N" for the course.
+If you have any questions regarding the expectations for a specific
+assignment or exam, ask.</p>
+
+<h2>Final words</h2>
+
+<ul>
+<li>Policy is subject to change, but only with advanced warning given in
+class suitably far in advance.</li>
+<li>Major changes are unexpected.</li>
+<li>It is University policy to provide reasonable accommodations to
+students with disabilities. This publication/material is available
+in alternative formats to persons with disabilities upon request.
+Please contact the Disability Services office, 589-6163, Room 362
+Briggs Library to discuss accommodation needs.</li>
+<li>University policy prohibits sexual harassment as defined by the
+University of Minnesota Regents' policy:
+<a href="http://regents.umn.edu/sites/regents.umn.edu/files/policies/SexHarassment.pdf">http://regents.umn.edu/sites/regents.umn.edu/files/policies/SexHarassment.pdf</a></li>
+<li>Additional relevant university-wide policies  may be found
+online: <a href="http://policy.umn.edu/Policies/Education/Education/SYLLABUSREQUIREMENTS_APPA.html">http://policy.umn.edu/Policies/Education/Education/SYLLABUSREQUIREMENTS_APPA.html</a>.</li>
+<li>You should work together whenever possible, but the act of copying
+or other forms of cheating will not be tolerated. Academic
+dishonesty in any portion of the academic work for a course is
+grounds for awarding a grade of F or N for the entire course. Any
+act of plagiarism that is detected will result in a mark of zero on
+the entire test or assignment for both parties. Please come and talk to me if you
+have any questions about what constitutes academic dishonesty. UMM's
+Academic Integrity policy and procedures can be found at the
+following website: Academic Integrity
+<a href="http://committees.morris.umn.edu/academic-integrity">http://committees.morris.umn.edu/academic-integrity</a></li>
+<li>As a student you may experience a range of issues that can cause
+barriers to learning, such as strained relationships, increased
+anxiety, alcohol/drug problems, feeling down, difficulty
+concentrating, and/or lack of motivation. These mental health
+concerns or stressful events may lead to diminished academic
+performance or reduce your ability to participate in
+daily activities. If you have any special needs or requirements to
+help you succeed in the class, come and talk to me as soon as
+possible, or visit the appropriate University service yourself. You
+can learn more about the range of services available on campus by
+visiting any of these websites:
+
+<ul>
+<li><a href="http://www.morris.umn.edu/services/dsoaac/aac">The Academic Assistance Center</a></li>
+<li><a href="http://www.morris.umn.edu/services/counseling">Student Counseling</a></li>
+<li><a href="http://www.morris.umn.edu/services/dsoaac/dso">Disability Services</a></li>
+<li><a href="http://www.morris.umn.edu/services/msp">Equity, Diversity &amp; Intercultural Programs</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>References</h2>
+
+<ul>
+<li><a href="http://policy.umn.edu/Policies/Education/Education/GRADINGTRANSCRIPTS.html">Official University policy on grade
+definitions</a></li>
+<li><a href="http://regents.umn.edu/sites/default/files/policies/Student_Conduct_Code.pdf">Student conduct
+code</a></li>
+<li><a href="http://policy.umn.edu/Policies/Education/Education/MAKEUPWORK.html">Official policy on makeup work for legitimate
+absences</a></li>
+<li><a href="http://policy.umn.edu/Policies/Education/Education/STUDENTRESP.html">Board of Regents policy on student
+responsiblity</a></li>
+<li><a href="http://regents.umn.edu/sites/default/files/policies/SexHarassment.pdf">Board of Regents policy on sexual
+harassment</a></li>
+<li><a href="http://regents.umn.edu/sites/default/files/policies/Equity_Diversity_EO_AA.pdf">Board of Regents policy on equity, diversity, equal employment
+opportunity, and affirmative
+action</a></li>
+<li><a href="http://regents.umn.edu/sites/default/files/policies/DisabilityServices.pdf">Board of Regents policy on disability
+services</a></li>
+<li><a href="http://regents.umn.edu/sites/default/files/policies/Academic_Freedom.pdf">Board of Regents policy on academic freedom and
+responsibility</a></li>
+</ul>
+
   </div>
 
   <hr>

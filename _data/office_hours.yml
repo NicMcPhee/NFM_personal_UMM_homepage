@@ -1,7 +1,12 @@
-- semester: F15
+- semester: Fall
+  year: 2015
   times:
     - Monday, 3:30-4:30pm
     - Wednesday, 10:30-11:30am
     - Friday, 11:30am-12:30pm
-- semester: S16
-  times: TBD
+- semester: Spring
+  year: 2016
+  times:
+    - Monday, 4-5pm
+    - Tuesday, 4-5pm
+    - Thursday, 2-3pm
