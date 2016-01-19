@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="syllabus" itemscope>
+
+  <header class="course-header">
+    <h1 class="course-title" itemprop="name headline">
+      {{ page.discipline }} {{ page.course_number }}: {{ page.title }} – {{ page.semester }} {{ page.year }}
+    </h1>
+  </header>
+
+  <div class="syllabus-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <footer class"syllabus-footer">
+  <p class="post-meta">
+    Last modified: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {{ page.date | date: "%b %-d, %Y" }}
+    </time>
+    {% if page.faculty %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">{{ page.faculty }}</span></span>{% endif %}
+  </p>
+  </footer>
+
+</article>

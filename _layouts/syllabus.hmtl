@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="syllabus" itemscope>
+
+  <header class="course-header">
+    <h1 class="course-title" itemprop="name headline">
+      {{ page.discipline }} {{ page.course_number }}: {{ page.title }}
+    </h1>
+    <h2 class="course-time-place">
+      {{ page.semester }} {{ page.year }}, {{ page.times }}, {{ page.room }}
+    </h2>
+    <h3>Nic McPhee, {{ site.email }}</h3>
+  </header>
+
+  <div class="syllabus-content" itemprop="articleBody">
+
+    {{ content }}
+
+    <hr>
+
+    <div class="policies">
+      <h1>Relevant policies and support services</h1>
+      {% include grading_standards.html %}
+      {% include academic_workload_policy.html %}
+    </div>
+  </div>
+
+  <hr>
+
+  <footer class"syllabus-footer">
+  <p class="post-meta">
+    Last modified: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {{ page.date | date: "%b %-d, %Y" }}
+    </time>
+    {% if page.faculty %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">{{ page.faculty }}</span></span>{% endif %}
+  </p>
+  </footer>
+
+</article>
