@@ -51,6 +51,7 @@ get short shrift in the past.
 # Course goals and learning objectives
 
 The key areas for this course, along with specific learning objectives:
+
  - Systems design and organization
    - Analyze and evaluate system design decisions.
    - Understand and apply different types of modularity to help manage the system complexity.
@@ -78,6 +79,7 @@ See the [course schedule](../schedule) for the calendar and outline of the cours
 # Course work and grading
 
 The main deliverables will be:
+
  - Written assignments and problem sets (roughly once every other week): 20% total
  - Two one page memo writing assignments: 20% each
  - A take-home mid-term: 20%

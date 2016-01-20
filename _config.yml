@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Nic McPhee's UMM homepage
+title: Nic McPhee @ The University of Minnesota, Morris
 email: mcphee@morris.umn.edu
 description: > # this means to ignore newlines until "baseurl:"
   Materials for and from my courses, research, and other
   activities (Twitter, Flickr, etc.).
-baseurl: "/~mcphee/" # the subpath of your site, e.g. /blog
+baseurl: "/~mcphee" # the subpath of your site, e.g. /blog
 url: "http://facultypages.morris.umn.edu/~mcphee/" # the base hostname & protocol for your site
 twitter_username: NicMcPhee
 github_username:  NicMcPhee
