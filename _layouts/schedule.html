@@ -9,11 +9,40 @@ layout: default
     </h1>
   </header>
 
-  <div class="syllabus-content" itemprop="articleBody">
-    {{ content }}
+  <div class="schedule-content" itemprop="articleBody">
+    {% for week in page.schedule %}
+      <h2>Week {{ forloop.index }}</h2>
+      <div class="topics">
+        <h3>Primary topics</h3>
+        <ul>
+          {% for topic in week.topics %}
+          <li>{{ topic }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="readings">
+        <h3>Readings</h3>
+        <ul>
+          {% for reading in week.readings %}
+          <li>{{ reading }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% if week.activities.size > 0 %}
+      <div class="activities">
+        <h3>Activities</h3>
+        <ul>
+          {% for activity in week.activities %}
+          <li>{{ activity }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <hr>
+    {% endfor %}
   </div>
 
-  <footer class"syllabus-footer">
+  <footer class"schedule-footer">
   <p class="post-meta">
     Last modified: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {{ page.date | date: "%b %-d, %Y" }}

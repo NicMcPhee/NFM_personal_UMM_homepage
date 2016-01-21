@@ -21,12 +21,7 @@ schedule:
       - 3 fundamental abstractions
       - Naming and layers
     readings: Chapter 2 thru 2.4
-    activities: TBD
-  - topics: Case study: UNIX File system layering and Naming
+    activities:
+  - topics: "Case study: UNIX File system layering and Naming"
     readings: Chapter 2.5
 ---
-
-| Week | Topic | Readings | Assignments & activities |
-| ---- | ---- | ----- | ---- |
-| 0 | duck | goose |
-| x    | y    | z     |
