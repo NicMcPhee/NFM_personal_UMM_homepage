@@ -3,14 +3,10 @@ layout: default
 ---
 <article class="syllabus" itemscope>
 
-  <header class="course-header">
-    <h1 class="course-title" itemprop="name headline">
-      {{ page.discipline }} {{ page.course_number }}: {{ page.title }}
-    </h1>
-    <h1>Schedule – {{ page.semester }} {{ page.year }}</h1>
-  </header>
-
-  <hr>
+  <h1>Schedule - {{ page.semester }} {{ page.year }}</h1>
+  <p class="subtitle">{{ page.discipline }} {{ page.course_number }}</p>
+  <p class="subtitle">{{ page.title }}</p>
+  <p class="subtitle">{{ page.faculty }}</p>
 
   {% assign start_epoch = page.start_date | date: "%s" %}
   {% assign week_epoch = start_epoch %}
@@ -18,10 +14,11 @@ layout: default
 
   <div class="schedule-content" itemprop="articleBody">
     {% for week in page.schedule %}
+    <section>
       <h2>Week {{ forloop.index }}: {{ week_epoch | date: "%-d %B" }}</h2>
       {% assign week_epoch = week_epoch | plus : week_length %}
       <div class="topics">
-        <h3>Primary topics</h3>
+        <p>Primary topics</p>
         <ul>
           {% for topic in week.topics %}
           <li>{{ topic }}</li>
@@ -29,7 +26,7 @@ layout: default
         </ul>
       </div>
       <div class="readings">
-        <h3>Readings</h3>
+        <p>Readings</p>
         <ul>
           {% for reading in week.readings %}
           <li>{{ reading }}</li>
@@ -38,7 +35,7 @@ layout: default
       </div>
       {% if week.activities.size > 0 %}
       <div class="activities">
-        <h3>Activities</h3>
+        <p>Activities</p>
         <ul>
           {% for activity in week.activities %}
           <li>{{ activity }}</li>
@@ -46,7 +43,7 @@ layout: default
         </ul>
       </div>
       {% endif %}
-      <hr>
+    </section>
     {% endfor %}
   </div>
 
