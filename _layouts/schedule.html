@@ -5,13 +5,21 @@ layout: default
 
   <header class="course-header">
     <h1 class="course-title" itemprop="name headline">
-      {{ page.discipline }} {{ page.course_number }}: {{ page.title }} – {{ page.semester }} {{ page.year }}
+      {{ page.discipline }} {{ page.course_number }}: {{ page.title }}
     </h1>
+    <h1>Schedule – {{ page.semester }} {{ page.year }}</h1>
   </header>
+
+  <hr>
+
+  {% assign start_epoch = page.start_date | date: "%s" %}
+  {% assign week_epoch = start_epoch %}
+  {% assign week_length = 604800 %}
 
   <div class="schedule-content" itemprop="articleBody">
     {% for week in page.schedule %}
-      <h2>Week {{ forloop.index }}</h2>
+      <h2>Week {{ forloop.index }}: {{ week_epoch | date: "%-d %B" }}</h2>
+      {% assign week_epoch = week_epoch | plus : week_length %}
       <div class="topics">
         <h3>Primary topics</h3>
         <ul>

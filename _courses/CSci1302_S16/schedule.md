@@ -9,6 +9,7 @@ year: 2016
 room: Sci 2190
 times: MWF, 9:15-10:20am
 faculty: Nic McPhee
+start_date: 18 Jan 2016
 ---
 
 | Week | Topic | Readings | Assignments & activities |
